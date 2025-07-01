@@ -14,14 +14,14 @@ function HomeNavbar() {
       <nav className="flex items-center justify-between  px-12 py-4 bg-white border-b border-gray-200">
         {/* Left - Logo */}
         <div className="text-2xl font-bold text-gray-800">
-          <Link to="/home">
+          <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
         </div>
 
         {/* Center - Navigation */}
         <div className="hidden md:flex space-x-8">
-          <Link to="/home" className={navLinkClass("/home")}>
+          <Link to="/" className={navLinkClass("/")}>
             Home
           </Link>
           <Link to="/about" className={navLinkClass("/about")}>

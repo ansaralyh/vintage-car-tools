@@ -51,7 +51,7 @@ const SignIn: React.FC = () => {
         {/* Right Side */}
         <div className="md:w-1/2 h-full">
           <img
-            src="/public/images/dino-reichmuth-A5rCN8626Ck-unsplash 1.png"
+            src="/images/dino-reichmuth-A5rCN8626Ck-unsplash 1.png"
             alt="Nature road trip"
             className="w-full h-full object-cover"
           />
