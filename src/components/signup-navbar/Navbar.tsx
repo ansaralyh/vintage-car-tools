@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <nav className="w-full flex items-center justify-between px-8 py-4 border-b border-gray-100">
       {/* Left: Logo Circle */}
@@ -13,7 +15,12 @@ const Navbar: React.FC = () => {
           English (united States)
           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
         </div>
-        <button className="border border-gray-400 rounded-lg px-4 py-1.5 text-gray-800 font-medium hover:bg-gray-100 transition">Log in</button>
+        <button
+          className="border border-gray-400 rounded-lg px-4 py-1.5 text-gray-800 font-medium hover:bg-gray-100 transition"
+          onClick={() => navigate('/signin')}
+        >
+          Log in
+        </button>
       </div>
     </nav>
   );
