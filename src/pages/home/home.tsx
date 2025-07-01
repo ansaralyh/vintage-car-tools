@@ -11,7 +11,7 @@ function Home() {
       <WhyChooseUs/>
       <PopularTours/>
       <div className="mx-auto mt-10">
-        <h1 className="text-black font-extrabold text-[48px] text-center mb-4">Plane Your Vacation</h1>
+        <h1 className="text-black font-extrabold text-[48px] text-center mb-4">Plane Your Vacations</h1>
         <img src="/images/image 1.png" alt="" />
       </div>
       <Testimonials/>
