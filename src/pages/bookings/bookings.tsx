@@ -1,10 +1,9 @@
 import React from 'react';
-import HomeNavbar from '../../components/home-navbar/home-navbar';
 
 const Bookings: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col bg-white">
-      <HomeNavbar />
+     
       {/* Header with background image */}
       <div className="relative w-full h-[340px] md:h-[380px] lg:h-[400px] flex items-center justify-center">
         <img

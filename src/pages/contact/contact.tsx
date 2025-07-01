@@ -1,10 +1,8 @@
 import React from 'react';
-import HomeNavbar from '../../components/home-navbar/home-navbar';
 
 const Contact: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <HomeNavbar />
       {/* Header with background image */}
       <div className="relative w-full h-[638px] flex items-center justify-center">
         <img
