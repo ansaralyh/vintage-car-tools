@@ -7,7 +7,7 @@ function Tours() {
     <div>
       <div
         className="relative h-screen w-full flex items-center justify-center bg-center bg-cover bg-no-repeat"
-        style={{ backgroundImage: "url('/images/Rectangle 199.png')" }}
+        style={{ backgroundImage: "url('/images/tours.png')" }}
       >
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 z-0"></div>

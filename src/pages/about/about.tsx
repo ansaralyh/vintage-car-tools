@@ -43,7 +43,7 @@ function About() {
         </p>
       </div>
     </section>
-      <section className="flex flex-col md:flex-row items-center mb-24 justify-between px-6 md:px-24 py-12 gap-8">
+      <section className="flex flex-col md:flex-row items-center mb-24  justify-between px-6 md:px-24 py-12 gap-8">
         {/* Text Content */}
         <div className="md:w-1/2 text-center md:text-left">
           <h2 className="text-6xl font-bold mb-4">Our Story</h2>

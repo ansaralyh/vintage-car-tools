@@ -1,53 +1,50 @@
+import { Link, useLocation } from "react-router-dom";
 import logo from "/images/logo.png";
 
 function HomeNavbar() {
+  const location = useLocation();
+
+  const navLinkClass = (path: string) =>
+    `text-[#B56576] font-medium ${
+      location.pathname === path ? "font-extrabold text-[18px]" : ""
+    }`;
+
   return (
-    <div className="">
-      <nav className="flex items-center justify-between px-12 py-4 bg-white border-b border-gray-200">
-        {/* Left side - Logo/Brand */}
+    <div>
+      <nav className="flex items-center justify-between  px-12 py-4 bg-white border-b border-gray-200">
+        {/* Left - Logo */}
         <div className="text-2xl font-bold text-gray-800">
-          <img src={logo} alt="z" />
+          <Link to="/home">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
-        {/* Center - Navigation Links */}
+        {/* Center - Navigation */}
         <div className="hidden md:flex space-x-8">
-          <a
-            href="#"
-            className="text-[#B56576] font-medium"
-          >
+          <Link to="/home" className={navLinkClass("/home")}>
             Home
-          </a>
-          <a
-            href="#"
-            className="text-[#B56576] font-medium"
-          >
+          </Link>
+          <Link to="/about" className={navLinkClass("/about")}>
             About
-          </a>
-          <a
-            href="#"
-            className="text-[#B56576] font-medium"
-          >
+          </Link>
+          <Link to="/tours" className={navLinkClass("/tours")}>
             Tours
-          </a>
-          <a
-            href="#"
-            className="text-[#B56576]  font-medium"
-          >
+          </Link>
+          <Link to="/bookings" className={navLinkClass("/bookings")}>
             Bookings
-          </a>
-          <a
-            href="#"
-            className="text-[#B56576]  font-medium"
-          >
+          </Link>
+          <Link to="/contact" className={navLinkClass("/contact")}>
             Contact
-          </a>
+          </Link>
         </div>
 
-        {/* Right side - Signup/CTA */}
+        {/* Right - Signup */}
         <div>
-          <button className="bg-[#621B1F] hover:bg-[#621B1F] text-white px-4 py-2 rounded-md font-medium">
-            Signup
-          </button>
+          <Link to="/signup">
+            <button className="bg-[#621B1F] hover:bg-[#621B1F] text-white px-4 py-2 rounded-md font-medium">
+              Signup
+            </button>
+          </Link>
         </div>
       </nav>
     </div>

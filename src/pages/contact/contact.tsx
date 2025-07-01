@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
       {/* Header with background image */}
       <div className="relative w-full h-[638px] flex items-center justify-center">
         <img
-          src="https://images.unsplash.com/photo-1749497683202-d3073573d996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8"
+          src="/images/contact.png"
           alt="Contact header"
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-5xl mx-auto px-4 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         <h2 className="text-3xl font-semibold text-center mb-2">Get in Touch</h2>
         <p className="text-gray-500 text-center mb-8 max-w-2xl mx-auto">
           We'd love to hear from you! Whether you have questions about our tours or want to customize an experience – reach out to us below.

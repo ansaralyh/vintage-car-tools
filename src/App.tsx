@@ -12,8 +12,6 @@ import About from "./pages/about/about";
 import Contact from "./pages/contact/contact";
 import Bookings from "./pages/bookings/bookings";
 
-
-
 function App() {
   return (
     <>
@@ -22,7 +20,6 @@ function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
 
-
           <Route path="/" element={<HomePageLayout />}>
             <Route path="home" element={<Home />} />
             <Route path="tours" element={<Tours />} />
@@ -30,11 +27,8 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="bookings" element={<Bookings />} />
           </Route>
-
-          <Route path="/" element={<HomePageLayout />}></Route>
-
         </Routes>
-      </BrowserRouter>  
+      </BrowserRouter>
     </>
   );
 }
