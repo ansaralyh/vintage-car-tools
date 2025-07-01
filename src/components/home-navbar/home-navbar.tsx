@@ -13,31 +13,31 @@ function HomeNavbar() {
         <div className="hidden md:flex space-x-8">
           <a
             href="#"
-            className="text-gray-700 hover:text-violet-700 font-medium"
+            className="text-[#B56576] font-medium"
           >
             Home
           </a>
           <a
             href="#"
-            className="text-gray-700 hover:text-violet-700 font-medium"
+            className="text-[#B56576] font-medium"
           >
             About
           </a>
           <a
             href="#"
-            className="text-gray-700 hover:text-violet-700 font-medium"
+            className="text-[#B56576] font-medium"
           >
             Tours
           </a>
           <a
             href="#"
-            className="text-gray-700 hover:text-violet-700 font-medium"
+            className="text-[#B56576]  font-medium"
           >
             Bookings
           </a>
           <a
             href="#"
-            className="text-gray-700 hover:text-violet-700 font-medium"
+            className="text-[#B56576]  font-medium"
           >
             Contact
           </a>
@@ -45,7 +45,7 @@ function HomeNavbar() {
 
         {/* Right side - Signup/CTA */}
         <div>
-          <button className="bg-violet-700 hover:bg-violet-800 text-white px-4 py-2 rounded-md font-medium">
+          <button className="bg-[#621B1F] hover:bg-[#621B1F] text-white px-4 py-2 rounded-md font-medium">
             Signup
           </button>
         </div>
